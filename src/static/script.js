@@ -9,18 +9,16 @@ const parseCodeFromUrl = () => {
   const parsedCode = url.searchParams.get('code');
 
   codeParagraph.textContent = !!parsedCode ? parsedCode : 'parsing error';
-  codeParagraph.classList.add('error');
-
+  
   if (!parsedCode) {
     disableButton();
+    codeParagraph.classList.add('error');
   }
-
-  console.log(url.toString());
 };
 
 const copyToClipboard = () => {
   const code = document.querySelector('.code').textContent;
-  console.log(code);
+  navigator.clipboard.writeText(code);
 };
 
 const main = () => {
