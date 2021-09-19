@@ -62,3 +62,7 @@ main {
 .copy-code-bt:active:not(:disabled) {
   opacity: 0.9;
 }
+
+.copy-code-bt:disabled {
+  text-decoration: line-through;
+}
