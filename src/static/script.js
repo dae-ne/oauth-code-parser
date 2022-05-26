@@ -1,10 +1,13 @@
+const BUTTON_QUERY = 'button';
+const CODE_QUERY = 'p';
+
 const disableButton = () => {
-  const button = document.querySelector('.copy-code-bt');
+  const button = document.querySelector(BUTTON_QUERY);
   button.disabled = true;
 }
 
 const parseCodeFromUrl = () => {
-  const codeParagraph = document.querySelector('.code');
+  const codeParagraph = document.querySelector(CODE_QUERY);
   const url = new URL(window.location.href);
   const parsedCode = url.searchParams.get('code');
 
@@ -17,14 +20,10 @@ const parseCodeFromUrl = () => {
 };
 
 const copyToClipboard = () => {
-  const code = document.querySelector('.code').textContent;
+  const code = document.querySelector(CODE_QUERY).textContent;
   navigator.clipboard.writeText(code);
 };
 
-const main = () => {
-  const button = document.querySelector('.copy-code-bt');
-  parseCodeFromUrl();
-  button.addEventListener('click', copyToClipboard);
-};
-
-main();
+const button = document.querySelector(BUTTON_QUERY);
+parseCodeFromUrl();
+button.addEventListener('click', copyToClipboard);

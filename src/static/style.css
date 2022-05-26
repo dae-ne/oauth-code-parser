@@ -27,21 +27,21 @@ main {
   margin: 0 24px;
 }
 
-.page-header, .code {
+h1, p {
   width: 100%;
   text-align: center;
 }
 
-.code {
+p {
   margin-top: 16px;
   word-wrap: break-word;
 }
 
-.code.error {
+p.error {
   color: red;
 }
 
-.copy-code-bt {
+button {
   padding: 8px;
   margin: 0 auto;
   margin-top: 24px;
@@ -55,14 +55,15 @@ main {
   transition: background-color ease-in-out 200ms;
 }
 
-.copy-code-bt:hover:not(:disabled) {
-  background:#c01fb6;
+button:hover:not(:disabled) {
+  background:#be1fb4;
 }
 
-.copy-code-bt:active:not(:disabled) {
+button:active:not(:disabled) {
   opacity: 0.9;
 }
 
-.copy-code-bt:disabled {
+button:disabled {
+  cursor: default;
   text-decoration: line-through;
 }
