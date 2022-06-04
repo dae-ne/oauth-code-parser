@@ -23,7 +23,7 @@ const parseCodeFromUrl = () => {
   const url = new URL(window.location.href);
   const parsedCode = url.searchParams.get('code');
 
-  codeParagraph.textContent = !!parsedCode ? parsedCode : 'parsing error';
+  codeParagraph.textContent = parsedCode ?? 'parsing error';
   
   if (!parsedCode) {
     disableButton();
