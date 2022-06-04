@@ -1,6 +1,6 @@
 # OAuth Code Parser
 
-Use this [website](https://oauth-code-parser.vercel.app/) as a redirect URI of your OAuth app to quickly parse code passed as a query string parameter.
+Use this [website](https://oauth-code-parser.vercel.app/) as a redirect URI of your OAuth app to quickly parse and copy to the clipboard code passed as a query string parameter.
 
 ## Running locally
 
