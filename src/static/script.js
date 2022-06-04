@@ -4,7 +4,7 @@ const CODE_QUERY = 'p';
 const disableButton = () => {
   const button = document.querySelector(BUTTON_QUERY);
   button.disabled = true;
-}
+};
 
 const parseCodeFromUrl = () => {
   const codeParagraph = document.querySelector(CODE_QUERY);
