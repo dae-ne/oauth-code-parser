@@ -5,8 +5,8 @@ Use this [website](https://dae-ne.github.io/oauth-code-parser/) as a redirect UR
 ## Running locally
 
 ```bash
-yarn
-yarn start
+npm install
+npm start
 ```
 
 Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
