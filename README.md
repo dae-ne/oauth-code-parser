@@ -1,6 +1,6 @@
 # OAuth Code Parser
 
-Use this [website](https://oauth-code-parser.vercel.app/) as a redirect URI of your OAuth app to quickly parse and copy to the clipboard code passed as a query string parameter.
+Use this [website](dae-ne.github.io/oauth-code-parser/) as a redirect URI of your OAuth app to quickly parse and copy to the clipboard code passed as a query string parameter.
 
 ## Running locally
 
@@ -13,7 +13,7 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 
 ## Example
 
-https://oauth-code-parser.vercel.app?code=3KVje0oshb
+dae-ne.github.io/oauth-code-parser?code=3KVje0oshb
 
 ## License
 
