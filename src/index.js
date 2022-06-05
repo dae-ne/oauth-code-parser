@@ -10,5 +10,5 @@ app.get('/', (_, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('\nServer is running:', `\x1b[34mhttp://localhost:${PORT}`);
+  console.log('\nServer is running: \x1b[34m%s\x1b[0m', `http://localhost:${PORT}`);
 });
