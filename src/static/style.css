@@ -41,7 +41,7 @@ p.error {
   color: red;
 }
 
-button {
+.btn {
   padding: 8px 16px;
   margin: 0 auto;
   margin-top: 24px;
@@ -55,15 +55,15 @@ button {
   transition: background-color ease-in-out 200ms;
 }
 
-button:hover:not(:disabled) {
+.btn:hover:not(:disabled) {
   background:#be1fb4;
 }
 
-button:active:not(:disabled) {
+.btn:active:not(:disabled) {
   opacity: .9;
 }
 
-button:disabled {
+.btn:disabled {
   cursor: default;
   text-decoration: line-through;
 }
