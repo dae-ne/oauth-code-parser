@@ -1,7 +1,19 @@
+const connectLiveReload = require("connect-livereload");
 const express = require('express');
-const app = express();
+const livereload = require("livereload");
 
 const PORT = 3001;
+
+const liveReloadServer = livereload.createServer();
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
+
+const app = express();
+
+app.use(connectLiveReload());
 
 app.use(express.static(__dirname + '/static'));
 
@@ -10,5 +22,5 @@ app.get('/', (_, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('\nServer is running: \x1b[34m%s\x1b[0m', `http://localhost:${PORT}`);
+  console.log('Server is running: \x1b[34m%s\x1b[0m', `http://localhost:${PORT}`);
 });
