@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./src/index.js -w ./src/static/ -e html,css,js"
+    "start": "nodemon ./src/index.js -w ./src/ -e html,css,js"
   },
   "dependencies": {
     "connect-livereload": "^0.6.1",
