@@ -27,17 +27,17 @@ main {
   margin: 0 24px;
 }
 
-h1, p {
+.header, .text {
   width: 100%;
   text-align: center;
 }
 
-p {
+.text {
   margin-top: 16px;
   word-wrap: break-word;
 }
 
-p.error {
+.text.error {
   color: red;
 }
 
