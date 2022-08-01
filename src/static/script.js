@@ -1,5 +1,5 @@
-const BUTTON_QUERY = 'button';
-const CODE_QUERY = 'p';
+const BUTTON_QUERY = '.btn';
+const CODE_QUERY = '.text';
 
 const disableButton = () => {
   const button = document.querySelector(BUTTON_QUERY);
